@@ -1,0 +1,375 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    color: rgb(242, 242, 240);
+    text-shadow: 1px 1px 5px #000;
+    background-image: url(images/勝ち風呂.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    backdrop-filter: blur(16px);
+}
+
+a {
+    color: inherit;
+    /* text-decoration: line-through; */
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.section-title {
+    display: inline-block;
+    font-size: 64px;
+    letter-spacing: 0.1em;
+    justify-content: space-between;
+}
+
+header {
+    position: fixed;
+    color:#1e1d1d;
+    text-shadow: none;
+    z-index: 9999;
+    height: 80px;
+    width: 100%;
+    background-color: rgba(237, 233, 230, 0.8);
+}
+
+header .container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header p{
+    font-stretch: 24px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+header ul {
+    display: flex;
+    column-gap: 40px;
+    justify-content: space-between;
+    list-style: none;
+}
+
+header a {
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.firstview {
+    color: #f3e9e9;
+    text-shadow: 1px 1px 5px #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 800px;
+    background-image: url(images/ブロスタひょうし.avif);
+    background-size: cover;
+}
+.firstview h1 {
+    font-size: 99px;
+}
+
+.firstview p {
+    font-size: 66px;
+}
+
+@media (max-width: 768px) {
+    .firstview h1 {
+        font-size: 56px;
+    }
+}
+
+.about {
+    padding: 64px 0;
+}
+
+.profile{
+  display: flex;
+  column-gap: 5%;
+}
+
+
+
+.profile h3 {
+    margin-top: 72px;
+    font-size: 24px;
+}
+
+.profile p {
+    margin-top: 24px;
+    font-size: 16px;
+}
+
+.profile img {
+    width: 480px;
+    height: 270px;
+}
+
+@media (max-width: 768px) {
+    .about {
+        padding: 80px 0;
+    }
+
+    .profile {
+        flex-direction: column;
+        row-gap: 24px;
+    }
+    .profile h3 {
+        margin-top: 24px;
+    }
+
+    .profile p {
+        margin-top: 16px;
+    }
+
+    .profile img {
+        width: 100%;
+    }
+}
+
+.school-club {
+    margin-top: 60px;
+    display: flex;
+    column-gap: 5%;
+}
+
+.school-club img {
+    width: 100%;
+    height: 300px;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.school-club h3 {
+    font-size: 35px;
+    margin-top: 8px
+}
+
+.school-club p {
+    margin-top: 16px;
+}
+
+.school-club a {
+    display: inline-block;
+    margin-top: 32px;
+    font-weight: bold;
+    border-bottom: 1px solid #333333;
+}
+
+.school-club .content {
+  width: 100%
+}
+
+.sorobato {
+    margin: 80px 0 0 60px;
+    display:flex;
+}
+
+.sorobato p {
+    margin-left: 80px;
+}
+
+.sorobato img{
+    width: 300px;
+}
+
+.favorite {
+    padding: 140px 0;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+}
+
+.favorite .section-title {
+  color: #ffffff;
+  border-bottom: 3px solid #ffffff;
+}
+
+.characters-list {
+    margin-top: 24px;
+    display: flex;
+    gap: 16px;
+    li {
+        list-style: none;
+        width: 240px;
+        height: 48px;
+        background-color: #f2cb05;
+        line-height: 48px;
+    }
+    .urutora {
+        background-color: red;
+    }
+    .haipa {
+        background-color: #a608d7;
+    }
+    .supa {
+        background-color: #0abfe4;
+    }
+    .rea {
+        background-color: #12cf28;
+    }
+}
+
+.favorite-content {
+    width: 320px;
+    padding: 40px;
+    margin: 30px;
+    background-color: rgba(255, 255, 255, 80%);
+    border-radius: 16px;
+}
+
+.favorite-content img {
+    width: 200px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+}
+
+.favorite-content h3 {
+    font-size: 24px;
+}
+
+.favorite-content p {
+    font-size: 16px;
+    text-align: left;
+}
+
+.favorite-contents {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact {
+    padding: 140px 0;
+    text-align: center;
+}
+
+.contact .section-title {
+    border-bottom: 3px solid #ff9900;
+}
+
+.contact img {
+    margin-top: 20px;
+    width: 80%;
+}
+
+
+
+.contact p {
+    margin-top: 48px;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 2;
+    text-align: left;
+    letter-spacing: 0.1em;
+}
+
+.contact .container {
+    max-width: 800px;
+}
+
+.contact a {
+    display: inline-block;
+    width: 500px;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 80px;
+    color: #ffffff;
+    letter-spacing: 0.1em;
+    border-radius: 16px;
+    text-decoration: none;
+}
+
+.YAPIMARU {
+    margin: 24px;
+    display: flex;
+    iframe{
+        height: 240px;
+        width: 100%;
+    }
+}
+
+
+.contact .sns {
+    margin-top: 100px;
+    column-gap: 50px;
+    justify-content: center;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    font-size: 14px;
+    letter-spacing: 0.1em;;
+    background-color: #edece7;
+}
+
+.club {
+    padding: 140px 0;
+    background-color: #fffdf3;
+}
+
+.club-text h2 {
+    font-size: 48px;
+}
+
+.club-text p {
+    margin-top: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.8;
+    letter-spacing: 0,1em;
+}
+
+.club-img img:nth-child(1) {
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 65%;
+}
+
+.club-img img:nth-child(2) {
+    top: 30%;
+    left: 8%;
+    z-index: 1;
+    width: 85%;
+}
+
+.club-img img:nth-child(3) {
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    width: 40%;
+}
+
+.club-img {
+    position: relative;
+    width: 50%;
+    aspect-ratio: 1 / 1.25;
+}
+
+.club-img img {
+    position: absolute;
+}
+
+.club-text {
+    position: relative;
+    z-index: 4;
+    width: 40%;
+}
