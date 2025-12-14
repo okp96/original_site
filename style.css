@@ -19,8 +19,7 @@ a {
 
 .container {
     width: 100%;
-    max-width: 1200px;
-    padding: 0 20px;
+    max-width: 880px;
     margin: 0 auto;
 }
 
@@ -99,6 +98,8 @@ header a {
 .profile{
   display: flex;
   column-gap: 5%;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 
@@ -174,12 +175,17 @@ header a {
 }
 
 .sorobato {
-    margin: 80px 0 0 60px;
+    max-width: 880px;
+    gap: 32px;
+    width: 100%;
+    margin: 80px auto 0 auto;
     display:flex;
+    justify-content: space-between;
 }
 
-.sorobato p {
-    margin-left: 80px;
+.sorobato h3 {
+    font-size: 30px;
+    margin-bottom: 16px;
 }
 
 .sorobato img{
@@ -224,7 +230,7 @@ header a {
 }
 
 .favorite-content {
-    width: 320px;
+    width: 220px;
     padding: 40px;
     margin: 30px;
     background-color: rgba(255, 255, 255, 80%);
@@ -232,7 +238,7 @@ header a {
 }
 
 .favorite-content img {
-    width: 200px;
+    width: 100%;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
 }
@@ -295,12 +301,25 @@ header a {
 }
 
 .YAPIMARU {
-    margin: 24px;
     display: flex;
+    justify-content: center;
+    gap: 32px;
+    max-width: 880px;
+    margin: auto;
+    margin: 48px;
     iframe{
-        height: 240px;
-        width: 100%;
+        aspect-ratio: 16/9;
+        height: 100%;
+        width: 480px;
     }
+}
+
+.YAPIMARU p {
+    padding-top: 24px;
+}
+
+.passerge {
+    font-size: 24px;
 }
 
 
@@ -317,7 +336,6 @@ footer {
     height: 80px;
     font-size: 14px;
     letter-spacing: 0.1em;;
-    background-color: #edece7;
 }
 
 .club {
