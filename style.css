@@ -3,15 +3,26 @@
     padding: 0;
     margin: 0;
 }
+
+@font-face {
+    font-family: "Brawlfont";
+    src:url(./fonts/Nougat-ExtraBlack.ttf) format(truetype)
+}
+
 body {
     color: rgb(242, 242, 240);
     text-shadow: 1px 1px 5px #000;
     background-image: url(images/勝ち風呂.jpg);
     background-size: cover;
+    background-position: center;
     background-attachment: fixed;
     backdrop-filter: blur(16px);
+    
 }
 
+ h2 {
+    font-family: "Brawlfont", sans-serif;
+ }
 a {
     color: inherit;
     /* text-decoration: line-through; */
@@ -25,19 +36,19 @@ a {
 
 .section-title {
     display: inline-block;
-    font-size: 64px;
+    font-size: 48px;
     letter-spacing: 0.1em;
     justify-content: space-between;
 }
 
-header {
-    position: fixed;
-    color:#1e1d1d;
-    text-shadow: none;
-    z-index: 9999;
-    height: 80px;
-    width: 100%;
-    background-color: rgba(237, 233, 230, 0.8);
+.content {
+     @media (max-width: 768px) {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+.content h3 {
+    font-size: 80px
 }
 
 header .container{
@@ -58,12 +69,36 @@ header ul {
     column-gap: 40px;
     justify-content: space-between;
     list-style: none;
+    font-family: "Brawlfont", sans-serif;
+    @media (max-width: 768px) {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
 }
 
 header a {
-    font-size: 16px;
+    display: block;
+    font-size: 24px;
     font-weight: bold;
     text-decoration: none;
+    height:80px;
+    line-height: 80px;
+    background-color: #f2cb05;
+    padding: 0px 40px;
+    transform: skew(2deg, 1deg);
+    @media (max-width: 768px) {
+        height: 64px;
+        line-height: 64px;
+        font-size: 18px;
+    }
+}
+
+header {
+    height: 120px;
+    background-color: #000;
+    @media (max-width: 768px) {
+       height: auto;
+    }
 }
 
 .firstview {
@@ -76,6 +111,8 @@ header a {
     height: 800px;
     background-image: url(images/ブロスタひょうし.avif);
     background-size: cover;
+    background-position: center;
+    font-family: "Brawlfont", sans-serif;
 }
 .firstview h1 {
     font-size: 99px;
@@ -92,14 +129,37 @@ header a {
 }
 
 .about {
-    padding: 64px 0;
+    padding: 64px ;
+    @media (max-width: 768px) {
+    .about {
+        padding: 80px 0;
+    }
+
+
+    .profile {
+        flex-direction: column;
+        row-gap: 40px;
+    }
+    .profile h3 {
+        margin-top: 24px;
+    }
+
+    .profile p {
+        margin-top: 16px;
+    }
+
+    .profile img {
+        width: 100%;
+    }
+        
+    }
 }
 
 .profile{
   display: flex;
   column-gap: 5%;
   justify-content: space-between;
-  align-items: flex-end;
+  margin-bottom: 80px;
 }
 
 
@@ -119,26 +179,7 @@ header a {
     height: 270px;
 }
 
-@media (max-width: 768px) {
-    .about {
-        padding: 80px 0;
-    }
 
-    .profile {
-        flex-direction: column;
-        row-gap: 24px;
-    }
-    .profile h3 {
-        margin-top: 24px;
-    }
-
-    .profile p {
-        margin-top: 16px;
-    }
-
-    .profile img {
-        width: 100%;
-    }
 }
 
 .school-club {
@@ -181,15 +222,27 @@ header a {
     margin: 80px auto 0 auto;
     display:flex;
     justify-content: space-between;
+     @media (max-width: 768px) {
+        gap: 16px;
+    
+        flex-direction: column-reverse;
+    }
 }
 
 .sorobato h3 {
     font-size: 30px;
     margin-bottom: 16px;
+     @media (max-width: 768px) {
+        font-size: 20px;
+    }
 }
 
-.sorobato img{
-    width: 300px;
+
+.sorobato img {
+    max-width: 440px;
+     @media (max-width: 768px) {
+        max-width: 100%;
+    }
 }
 
 .favorite {
@@ -309,8 +362,12 @@ header a {
     margin: 48px;
     iframe{
         aspect-ratio: 16/9;
-        height: 100%;
+        height: auto;
         width: 480px;
+    }
+     @media (max-width: 768px) {
+        flex-direction: column;
+        margin-top: 24px;
     }
 }
 
@@ -322,6 +379,9 @@ header a {
     font-size: 24px;
 }
 
+.passerge p {
+    font-size: 16px;
+}
 
 .contact .sns {
     margin-top: 100px;
